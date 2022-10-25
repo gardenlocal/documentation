@@ -1,6 +1,11 @@
 
 ## Initial Setup 
 
+### Raspberry Pi Spec
+- 메모리 1G, 비디오 메모리랑 공유해서 쓰는거라 800-900메가 생각하면 됨.
+- 터미널에서 htop 으로 메모리 상황 볼 수 있음
+- SD 카드 용량은 16gb
+
 ### Prerequisite
 
 1. Connect pi@dwc2Mesh to wifi (internet provider)

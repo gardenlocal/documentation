@@ -66,7 +66,7 @@ DELETE From users;
 6. 비밀번호는 `dwc!` 이다. 
 7. **서버를 재시작하기**
 8. `cd works/dwc-v3-socket-server`를 입력한다. 
-  - `cd works`, `cd dwc-v3-socket-server`를 순서대로 엔터쳐서 입력해도 된다. 
+    - `cd works`, `cd dwc-v3-socket-server`를 순서대로 엔터쳐서 입력해도 된다. 
 9. 코드가 업데이트되어 있다고 하면, `git pull origin main`
 10. `cd server`를 입력해서 server 폴더로 들어간다. 
 11. `pm2 restart 0` (숫자 0)을 입력한다. 

@@ -1,6 +1,6 @@
 # links
--> [on site manual](./on-site-manual-2022.md)
--> [hardware manual](./hardware-manual.md)
+- [on site manual](./on-site-manual-2022.md)
+- [hardware manual](./hardware-manual.md)
 
 ## Initial Setup 
 

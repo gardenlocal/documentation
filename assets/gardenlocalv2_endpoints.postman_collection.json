@@ -1,0 +1,330 @@
+{
+	"info": {
+		"_postman_id": "fc420bce-8496-49af-8537-70a0ea2fbe5e",
+		"name": "gardenlocal2.0 raspberry pi endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2662906"
+	},
+	"item": [
+		{
+			"name": "setManual",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 1,\n    \"manual\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/manual",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"manual"
+					]
+				},
+				"description": "**수동모드를 세팅합니다.**\n\nid : 스테이션 id (1 - n)  \nmanual : 0 - 자동 (default) / 1 - 수동"
+			},
+			"response": []
+		},
+		{
+			"name": "getManual",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/manual",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"manual"
+					]
+				},
+				"description": "``` json\n[\n    {\n        \"manual\": 0\n    },\n    {\n        \"manual\": 0\n    },\n    {\n        \"manual\": 1\n    }\n]\n\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "setSpray",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"spray\" : 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/spray",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"spray"
+					]
+				},
+				"description": "**분무 시간을 지정합니다. (초)**\n\nid : 스테이션 id (1 - n)  \nspray : n초"
+			},
+			"response": []
+		},
+		{
+			"name": "getSpray",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/spray",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"spray"
+					]
+				},
+				"description": "``` json\n[\n    {\n        \"spray\": 10\n    },\n    {\n        \"spray\": 5\n    },\n    {\n        \"spray\": 5\n    }\n]\n\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "setInterval",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"interval\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/interval",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"interval"
+					]
+				},
+				"description": "**분무 주기를 세팅합니다. (분)**\n\nid : 스테이션 id (1 - n)  \ninterval : n분"
+			},
+			"response": []
+		},
+		{
+			"name": "getInterval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/interval",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"interval"
+					]
+				},
+				"description": "``` json\n[\n    {\n        \"interval_minutes\": 10\n    },\n    {\n        \"interval_minutes\": 60\n    },\n    {\n        \"interval_minutes\": 60\n    }\n]\n\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "setRunning",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 1,\n    \"run\" : 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/run",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"run"
+					]
+				},
+				"description": "**매뉴얼 모드에서 동작유무를 세팅합니다.**\n\nid : 스테이션 id (1 - n)  \nrun : 0(정지)/1(동작)"
+			},
+			"response": []
+		},
+		{
+			"name": "getRunning",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/run",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"run"
+					]
+				},
+				"description": "``` json\n[\n    {\n        \"running\": 1\n    },\n    {\n        \"running\": 0\n    },\n    {\n        \"running\": 0\n    }\n]\n\n```"
+			},
+			"response": []
+		},
+		{
+			"name": "setHumidMode",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : 3,\n    \"humidMode\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/humidMode",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"humidMode"
+					]
+				},
+				"description": "**습도에 따라 물을 주는 시간을 조절하는 모드를 켜고 끕니다.**\n\nid : 스테이션 id (1 - n)  \nhumidMode : 0(정지)/1(동작)"
+			},
+			"response": []
+		},
+		{
+			"name": "getHumidMode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://gardenlocal.iptime.org:3005/humidMode",
+					"protocol": "http",
+					"host": [
+						"gardenlocal",
+						"iptime",
+						"org"
+					],
+					"port": "3005",
+					"path": [
+						"humidMode"
+					]
+				},
+				"description": "``` json\n[\n    {\n        \"running\": 1\n    },\n    {\n        \"running\": 0\n    },\n    {\n        \"running\": 0\n    }\n]\n\n```"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "serverIP\n",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}

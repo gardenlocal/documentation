@@ -2,6 +2,7 @@
 ![hardware diagram](./assets/hwDiagram.jpg)
 
 # router setting
+- [router setting backup file](./assets/general_a3002me_20221121_115011.config)
 ## WIFI information 
 ```
 5G   : dwc2Mesh  / choitaeyoonStudio

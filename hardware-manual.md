@@ -4,8 +4,8 @@
 # router setting
 ## WIFI information 
 ```
-5G : dwc2Mesh / choitaeyoonStudio
-2G : dwc2Mesh / choitaeyoonStudio
+5G   : dwc2Mesh  / choitaeyoonStudio
+2.4G : dwc2Mesh2 / choitaeyoonStudio
 ```
 ## DHCP setup
 ```
